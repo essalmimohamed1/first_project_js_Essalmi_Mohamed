@@ -75,7 +75,14 @@ let choose = prompt("signing up, logging in, or changing the password")
             alert("i dont have this pasword")
         }
     }if(choose == "changing the password") {
-        
+        let logain = prompt("inter your email")
+        if (email = logain) {
+            let newpasword = prompt("inter your new pasword")
+            Password = newpasword
+        }
+        else{
+            alert("i dont have this email")
+        }
     }
 
 
