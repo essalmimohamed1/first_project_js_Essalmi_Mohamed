@@ -10,24 +10,45 @@
 //     console.log(name2);
 // }
 // if(names.length < 5){
-//     let name = prompt("inter your name : ")
-//     nameff(name)
-// }
+//     while (names.length < 5) {
+//         let name = prompt("inter your name corect : ") 
+//         nameff(names)
+//     }
+//     }
 // else{
 //     nameff(names)
 // }
 // * email
 // let email = prompt("your email : ") 
-// email = email.trim().toLowerCase()
+// email = email.trim().toLowerCase().replace(/ /g, '')
 // if(email.length < 10){
-//     let email = prompt("your email : ") 
+//     let email = prompt("your email corect : ") 
 //         console.log(email);
 //     }
 //     else{
 //         console.log(email);
 //     }
 // * age
-let age = prompt("your age : "); 
-age = Number(age.trim())
-alert(age)
+// let age = prompt("your age : ");
+// if(age.length > 2){
+//     let age = prompt("your age corect : ") 
+//     age = Number(age.trim().replace(/ /g, ''))
+//     console.log(age);
+//     }
+//     else{
+//         age = Number(age.trim().replace(/ /g, ''))
+//         console.log(age);
+//     }
+// *  Password
+let Password = prompt("your password : ");
+if(Password.length < 7){
+        let Password = prompt("your age corect : ") 
+        Password = Password.trim().replace(/ /g, '')
+        console.log(Password);
+        }
+        else{
+            Password = Password.trim().replace(/ /g, '')
+            console.log(Password);
+        }
+
 
