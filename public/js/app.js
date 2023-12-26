@@ -60,7 +60,20 @@ let choose = prompt("signing up, logging in, or changing the password")
 
     }
     } if(choose == "logging in") {
-    
+        let logain = prompt("inter your email")
+        if (email = logain) {
+            console.log("welcome");
+        }
+        else{
+            alert("i dont have this email")
+        }
+        let password = prompt("inter your pasword")
+        if (password = Password) {
+            console.log("welcome");
+        }
+        else{
+            alert("i dont have this pasword")
+        }
     }if(choose == "changing the password") {
         
     }
