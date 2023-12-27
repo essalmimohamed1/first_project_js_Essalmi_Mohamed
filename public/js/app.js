@@ -60,8 +60,9 @@ while(choose !== "signing up" || choose !== "logging in" || choose !== "changing
                     history`)
                 if (choose == "withdraw money") {
                     let tire = Number(prompt("chhal bari tiri"))
-                    if (tire <= 1000 ) {
+                    if (tire <= price ) {
                     let withdraw = price - tire
+                    console.log(withdraw);
                     }
                     else{
                         alert("your price is 1000")
@@ -117,6 +118,17 @@ while(choose !== "signing up" || choose !== "logging in" || choose !== "changing
     }
     }
 }
-
+class User {
+    constructor(names, email, age, Password, price) {
+        this.names = names
+        this.email = email
+        this.age = age
+        this.Password = Password
+        this.price = price
+        this.loans = []
+        this.invests = []
+        this.history = []
+    }
+}
 
 
