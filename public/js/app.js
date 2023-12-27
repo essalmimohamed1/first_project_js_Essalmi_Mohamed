@@ -106,6 +106,18 @@ while(choose !== "signing up" || choose !== "logging in" || choose !== "changing
             alert("i dont have this email")
         }
     }
+    class User {
+        constructor(names, email, age, Password, price) {
+            this.names = names
+            this.email = email
+            this.age = age
+            this.Password = Password
+            this.price = price
+            this.loan = loan
+            this.invests = invests
+            this.history = history
+        }
+    }
     }if(choose == "changing the password") {
         let logain = prompt("inter your email")
         if (email = logain) {
@@ -118,17 +130,6 @@ while(choose !== "signing up" || choose !== "logging in" || choose !== "changing
     }
     }
 }
-class User {
-    constructor(names, email, age, Password, price) {
-        this.names = names
-        this.email = email
-        this.age = age
-        this.Password = Password
-        this.price = price
-        this.loans = []
-        this.invests = []
-        this.history = []
-    }
-}
+
 
 
